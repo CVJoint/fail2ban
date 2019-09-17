@@ -1,0 +1,9 @@
+[traefik]
+enabled = true
+port = http,https
+filter = traefik
+action = iptables-multiport[name=traefik, chain=FORWARD]
+logpath = /var/log/docker/traefik.log
+maxretry = 10
+bantime = 900
+findtime = 14400

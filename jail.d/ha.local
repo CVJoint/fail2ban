@@ -1,0 +1,20 @@
+[DEFAULT]
+# Email config
+sender = cannondale8022@gmail.com
+destemail = seth.seifert@gmail.com
+
+# Action "%(action_mwl)s" will ban the IP and send an email notification including whois data and log entries.
+action = %(action_mwl)s
+
+[ha]
+enabled = true
+filter = ha
+logpath = /var/log/home-assistant.log
+
+# 3600 seconds = 1 hour
+bantime = 3600
+#bantime = 30 # during testing it is useful to have a short ban interval, comment out this line later
+
+# Maximum amount of login attempts before IP is blocked
+maxretry = 3
+

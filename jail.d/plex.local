@@ -1,0 +1,8 @@
+[plex]
+enabled = true
+port = 80,443,32400
+filter = plex
+action = iptables-allports[name=plex, chain=FORWARD]
+logpath = /var/log/docker/plex.log
+maxretry = 3
+bantime  = 172800

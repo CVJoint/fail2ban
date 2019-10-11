@@ -1,7 +1,7 @@
 [DEFAULT]
 # Email config
-sender = cannondale8022@gmail.com
-destemail = seth.seifert@gmail.com
+sender = <your email>
+destemail = <destination email>
 
 # Action "%(action_mwl)s" will ban the IP and send an email notification including whois data and log entries.
 action = %(action_mwl)s
@@ -17,4 +17,3 @@ bantime = 3600
 
 # Maximum amount of login attempts before IP is blocked
 maxretry = 3
-

@@ -1,7 +1,9 @@
+#https://www.home-assistant.io/cookbook/fail2ban/
+
 [DEFAULT]
 # Email config
-sender = <your email>
-destemail = <destination email>
+sender = email@address.com
+destemail = email@address.com
 
 # Action "%(action_mwl)s" will ban the IP and send an email notification including whois data and log entries.
 action = %(action_mwl)s
